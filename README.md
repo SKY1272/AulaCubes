@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# AulaCubes
+# Task Management App.
+## Project Structure
+**src**: Contains the source code of the React application.
+  - **components**: Directory for React components.
+    - `TaskList.js`: Component to display the list of tasks.
+    - `AddTaskModal.js`: Component to add new tasks.
+    - `EditTaskModal.js`: Component to edit existing tasks.
+  - **App.js**: Main application component.
+  - **index.js**: Entry point of the application.
+- **styles**: Directory containing CSS files for styling components.
+  - `TaskList.css`: Styles for the TaskList component.
+  - `AddTaskModal.css`: Styles for the AddTaskModal component.
+  - `EditTaskModal.css`: Styles for the EditTaskModal component
+  - ## Design Choices
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### React Router Implementation
+- Utilized React Router for navigation between different pages (task list, add task, edit task).
+- Implemented navigation using `<Link>` components for a seamless user experience.
 
-## Available Scripts
+### TaskList Component
+- TaskList component displays tasks with checkboxes, task details, edit, and delete buttons.
+- Tasks are stored in state and managed using useState hook.
+- Implemented functions for task completion, deletion, and task edit modal display.
 
-In the project directory, you can run:
+### AddTaskModal Component
+- AddTaskModal component provides a form to add new tasks.
+- Validates input fields and prevents adding tasks without a name.
 
-### `npm start`
+### EditTaskModal Component
+- EditTaskModal component allows editing existing tasks.
+- Validates input fields and updates tasks on the task list.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Additional Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### CSS Styling
+- Implemented CSS styling for components to enhance the UI and provide a pleasant user experience.
+- Utilized CSS for TaskList, AddTaskModal, and EditTaskModal components to improve readability and usability.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Readability and Modularity
+- Code structured into separate components for reusability and maintainability.
